@@ -1,62 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f3f5;
+  font-family: Arial, sans-serif;
+  background-color: #f2f3f5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b5998;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+  display: flex;
+  margin: 10px;
+
+  .likes {
+    position: absolute;
+    right: 0;
+  }
+  .time {
     margin: 0;
-    padding: 0;
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3b5998;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+  .relative {
+    position: relative;
   }
-  
-  .post-container {
-    margin: 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .post {
-    margin-bottom: 20px;
-  }
-  
-  .post .post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .post .post-header img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .post .post-header .post-author {
-    font-weight: bold;
-  }
-  
-  .post .post-text {
-    margin-bottom: 10px;
-  }
-  
-  .post .post-image {
-    max-width: 100%;
-    height: auto;
-  }
-  input {
-    width: 70%;
-    height: 200px;
-  }
-//   form {
-//     display: inline-block;
-//   }
+}
+
+.post-author {
+  margin-bottom: 10px;
+}
+.post .post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post .post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post .post-header .post-author {
+  font-weight: bold;
+}
+
+.post .post-text {
+  margin-bottom: 10px;
+}
+
+.post .post-image {
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+}
+input {
+  width: 70%;
+  height: 100px;
+}
